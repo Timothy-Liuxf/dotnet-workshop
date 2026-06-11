@@ -1,0 +1,8 @@
+# .vs, .vscode must be ignored
+.vs/
+.vscode/
+.cursor/
+.claude/
+.ai-workspace/
+.idea/
+.DS_Store
