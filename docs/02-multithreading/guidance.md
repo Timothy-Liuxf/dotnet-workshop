@@ -264,6 +264,60 @@ LogAnalyzer
   + 获取文件名：`Name`
   + 获取文件的完整路径：`FullName`
 
+### （S2.3）Step 3：一个简要的控制台交互界面
+
+现在，我们相对完整地完成了一个日志解析系统，为了方便大家在后续进一步地 Debug，这里让大家实现一个极其建议地控制台交互界面。
+
+代码框架已经在 `LocalCli/Program.cs` 中写好，大家只需要完成剩余的部分，调用之前写好的 `LogFileAnalyzer` 即可。你需要完成如下的：
+
++ `InputDirectory`：输入日志文件所在的目录，并构造 `analyzer` 对象
++ `ShowLogFiles`：查看目录中包含哪些文件（调用 `LogFileAnalyzer.GetLogFiles`）
++ `AnalyzeFiles`：输入一系列的逗号分隔的文件名，分析指定的日志文件（调用 `LogFileAnalyzer.AnalyzeFiles`）
++ `AnalyzeAll`：分析全部日志文件（调用 `LogFileAnalyzer.AnalyzeAll`）
++ `GetAnalysisResult`：输入一个文件名，输出分析结果（调用 `LogFileAnalyzer.TryGetAnalysisResult`）：
+  + 对还没分析的文件，要给出提示信息
+  + 对分析成功的文件，调用 `KeyValueVisitor.Dump` 输出结果
+  + 对分析失败的文件，输出错误信息（`AnalysisResult.ErrorMessage`）
++ 异常处理：`LogFileAnalyzer` 对错误输入的处理方式，要么返回 `false`，要么抛出异常。你需要对这类异常进行捕获，以提示用户的输入非法并提示其重新输入
+
+一个可以参考的界面成品截图如下：
+
+![localcli](./assets/localcli.png)
+
+> [!NOTE]
+>
+> **任务 2.3（T2.3）**
+>
+> 请完成 `LocalCli/Program.cs` 中的实现。
+>
+> 当你完成你的实现后，请在 `docs/02-multithreading` 目录中新建一个名为 `report.md` 的文本文件，在其中介绍你实现的功能，并给出完整功能的截图（参考以上给出的参考截图）。
+
+**可能用到的接口：**
+
++ C\# 字符串操作：
+
+  + `string.Join`：用连接符连接一个可枚举类型（如列表）：
+
+    ```csharp
+    var list = new List<int> { 1, 2, 3 };
+    var str = string.Join(", ", list); // str = "1, 2, 3"
+    ```
+
+  + `string.Split`：用分隔符对字符串进行切分：
+
+    ```csharp
+    var str = "1,2,3";
+    var result = str.Split(','); // result = { "1", "2", "3" }
+    ```
+
++ LINQ 操作：LINQ 属于 C\# 中相对高级的语法，能极大地简化我们对各类可枚举类型的操作。尤其是其中的 Method syntax 能帮助我们节省诸多循环，但如果新手无法掌握也可以使用普通的循环来完成任务，如有兴趣可以参考官方文档：[编写 LINQ 查询 - C#](https://learn.microsoft.com/zh-cn/dotnet/csharp/linq/get-started/write-linq-queries)。以下是相对常用的几个 LINQ 方法：
+
+  + `Where`：按条件过滤元素
+  + `Select`：对元素进行转换
+  + `OrderBy`：按指定的键排序
+
+  LINQ 方法的返回值是一个 `IEnumerable<T>` 类型（利用 **协程（coroutine）** 技术产生的可以惰性求值的类型，C\# 中可以使用 `yield return` 语句来进行惰性求值），即可以使用 `foreach` 语句进行遍历，也可以调用诸如 `ToList` 等方法将其转换成列表或其他容器。
+
 ## 问答题
 
 未完待续，敬请期待……
