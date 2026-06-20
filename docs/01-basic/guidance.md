@@ -336,7 +336,7 @@ class LineParser {
 >
 > 我们已经给出了 Call 类型日志的完整实现。运行测试 `test-01-basic`，`TestLogFileParserBasic` 中的 `TestParseCallLogEntry` 将会通过。
 >
-> 请参考 Call 类型日志的完整实现，以及本文档末尾给出的「可能用到的知识或接口」一节，自己动手实现对 request 和 internal 类型日志的解析。当你完成你的实现后，运行测试 `test-01-basic`，你将会通过 `TestLogFileParserBasic` 中的全部测试（即 `T1.2` 开头的全部测试）。
+> 请参考 Call 类型日志的完整实现，以及本文档末尾给出的「可能用到的知识或接口」一节，自己动手实现对 request 和 internal 类型日志的解析。当你完成你的实现后，运行测试 `test-01-basic`，你将会通过 `Test_1_2_LogFileParserBasic` 中的全部测试（即 `T1.2` 开头的全部测试）。
 
 **可能用到的接口：**
 
