@@ -1,10 +1,10 @@
-name: test-01-basic
+name: test-05-advanced
 on:
   pull_request:
-    branches: [feat/01-basic]
+    branches: [feat/05-advanced]
 
 jobs:
-  test-01-basic:
+  test-05-advanced:
     if: true
     runs-on: windows-latest
     steps:
@@ -19,22 +19,14 @@ jobs:
         working-directory: ./src
         run: dotnet build -c Release
 
-      - name: Test prepare
-        working-directory: ./src
-        run: dotnet test test-00-prepare -c Release
-
-      - name: Test basic
-        working-directory: ./src
-        run: dotnet test test-01-basic -c Release
-
       - name: Check report existence
         id: check_files
         uses: andstor/file-existence-action@v3
         with:
-          files: "docs/01-basic/report.md"
+          files: "docs/05-advanced/report.md"
 
       - name: Report exists
         if: steps.check_files.outputs.files_exists == 'false'
         run: |
-          echo Missing report: docs/01-basic/report.md
+          echo Missing report: docs/05-advanced/report.md
           exit 1
