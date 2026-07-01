@@ -348,7 +348,7 @@ partial class MainViewModel {
 
 ## 拓展阅读
 
-未完待续……
+暂无，待补充
 
 ## 前进 / 后退
 

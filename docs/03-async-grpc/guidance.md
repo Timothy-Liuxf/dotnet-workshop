@@ -443,7 +443,8 @@ gRPC，核心是 RPC，即远程过程调用。「过程」一词，在现代编
 
 ## 拓展阅读
 
-未完待续……
++ [手把手学习 C++20 协程（coroutine）](https://timothy-liuxf.github.io/tm-blogs/blogs/zh-CN/c_cpp/cpp-coroutine.html)：通过 C++ 的协程来更好地理解 `async` 和 `await`，以及 `yield return`
++ [有栈协程与无栈协程](https://mthli.xyz/stackful-stackless/)：了解有栈协程（例如 Go 语言中的 Goroutine）与无栈协程（例如 C\# 中的 `async`、`await` 与 `yield return`）
 
 ## 前进 / 后退
 

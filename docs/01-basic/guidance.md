@@ -529,7 +529,9 @@ public abstract record LogEntry {
 
 ## 拓展阅读
 
-未完待续……
++ [云原生与现代计算机网络基础](https://docs.eesast.com/docs/web/cloud_native/fundamental)：初步了解什么是云服务，以及现代计算机网络的部分知识
++ [深入高可用系统原理与设计](https://www.thebyte.com.cn/)：深入了解云原生以及分布式系统
++ [Clean C++](https://link.springer.com/content/pdf/10.1007/978-1-4842-2793-0.pdf) 与 [Clean C++20](https://link.springer.com/content/pdf/10.1007/978-1-4842-5949-8.pdf)：了解软件设计当中的优良代码习惯
 
 ## 前进 / 后退
 

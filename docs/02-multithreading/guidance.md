@@ -413,7 +413,7 @@ class LogFileAnalyzer {
 
 ## 拓展阅读
 
-未完待续……
++ [多线程与异步](https://docs.eesast.com/docs/languages/CSharp/CSharp_2_multithread)：了解更多关于多线程与异步的知识
 
 ## 前进 / 后退
 
