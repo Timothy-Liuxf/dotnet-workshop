@@ -52,9 +52,7 @@
                 </select>
                 <script>
                     document.getElementById("select-lang").value = 'zh-CN';
-                    if (lang_index === -1) {
-                        document.getElementById("select-lang").style.display = 'none';
-                    } else {
+                    if (lang_index !== -1) {
                         document.getElementById("select-lang").value = paths[lang_index];
                     }
 
