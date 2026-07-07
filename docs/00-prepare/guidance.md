@@ -1,5 +1,9 @@
 # Guidance for Preparation
 
+## 目录
+
+[TOC]
+
 ## 训练目标
 
 + 了解工程的学习要求
