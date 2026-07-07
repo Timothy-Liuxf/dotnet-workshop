@@ -1,5 +1,9 @@
 # Guidance for Advanced Functions
 
+## 目录
+
+[TOC]
+
 ## 训练目标
 
 + 通过同学的想象力和自由发挥，锻炼同学的软件工程综合能力

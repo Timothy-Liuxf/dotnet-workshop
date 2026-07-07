@@ -1,5 +1,9 @@
 # Guidance for Basic Functions
 
+## 目录
+
+[TOC]
+
 ## 训练目标
 
 + 了解云服务日志解析的背景
