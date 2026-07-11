@@ -494,7 +494,7 @@ public abstract record LogEntry {
 
 ### (Q1.2)
 
-以一个 Call 事件的解析结果为例，当调用 `KeyValueVisitor` 的 `Dump` 方法后，都有哪些方法被调用？请补充完整如下的方法调用链（.NET 内置库）：
+以一个 Call 事件的解析结果为例，当调用 `KeyValueVisitor` 的 `Dump` 方法后，都有哪些方法被调用？请补充完整如下的方法调用链（.NET 内置库无需写出）：
 
 + `Dictionary<string, string> KeyValueVisitor.Dump(LogEntry entry)`
 + ……
