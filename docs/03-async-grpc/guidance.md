@@ -80,7 +80,7 @@ console.log("hello");
 
 除了 Promise-Then 模型之外，还有 C++ 的 Future 模型，这是我们在未来的队式开发中要用到的：
 
-```csharp
+```cpp
 var fut = std::async([&]() { return NetworkCall(Request(a, b)).GetResult(); }); // 返回一个 std::future<T>
 // 你可以在这里做任何事情
 // 等到你需要结果的时候，你可以再获取结果：
@@ -110,7 +110,7 @@ public async Task<int> CalculateAddAsync(int a, int b) { // a 和 b 为用户输
 
 在使用 async-await 编程模型进行异步编程时，C\# 的 .NET 运行时会使用 .NET 内置的线程池 [System.Threading.ThreadPool 类](https://learn.microsoft.com/zh-cn/dotnet/api/system.threading.threadpool?view=net-10.0) 来进行线程调度。 **该线程池十分诡异，默认情况下，在线程池满后会等待约 1 秒钟，如果没有线程让出来再扩容线程池。** 这 1 秒钟会一直阻塞。因此，在你能确定你在做什么之前，需要注意不要想当然地随手使用此线程池和 `Task`，因为大多数使用异步的场景，都已经由 .NET 库或第三方库封装好异步接口了，需要自己开辟新的 `Task` 用于异步的场景不算多。
 
-需要注意的是，我们在前一节多线程当中使用的同步互斥方案如 `lock`、`Monitor.Wait` 等，以及常用的 `Thread.Sleep(1000)` 等都是会占用真正的线程的，在异步编程中应当用 `await Task.Delay(1000)` 来进行等待。
+需要注意的是，我们在前一节多线程当中使用的同步互斥方案如 `lock`、`Monitor.Wait` 等，以及常用的 `Thread.Sleep(1000)` 等都是会占用真正的线程的，在异步编程中应当用 `await Task.Delay(1000)` 来进行等待以及其他专用的同步互斥手段。
 
 但本 workshop 当中不涉及网络应用异步编程当中进行同步互斥，因此同学们无需苦恼。前一节当中使用的同步互斥与并行解析是单纯等待多线程的应用，是用于优化 CPU 对日志解析的计算过程（虽然也存在文件读写的磁盘 I/O，且短而快的 CPU 密集型任务通常也会使用线程池进行复用，但两者均并非本 workshop 中所指的异步编程的目标），而非本节异步编程的目标。
 
