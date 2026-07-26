@@ -2,8 +2,34 @@ pull_request_rules:
   - name: 🏷️ Label homework
     description: Label a homework with 'homework' label by detecting keyword
     conditions:
-      - body~=作业提交
+      - body ~= 作业提交
     actions:
       label:
         add:
           - homework
+  - name: 🏷️ Label documentation
+    description: Label a pull request with 'documentation' label by detecting keyword
+    conditions:
+      - title ~= ^docs\(.*\)
+    actions:
+      label:
+        add:
+          - documentation
+
+  - name: 🏷️ Label enhancement
+    description: Label a pull request with 'enhancement' label by detecting keyword
+    conditions:
+      - title ~= ^feat\(.*\)
+    actions:
+      label:
+        add:
+          - enhancement
+
+  - name: 🏷️ Label gh-pages
+    description: Label a pull request with 'gh-pages' label by detecting keyword
+    conditions:
+      - title ~= gh-pages
+    actions:
+      label:
+        add:
+          - gh-pages
