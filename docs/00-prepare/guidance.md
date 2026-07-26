@@ -410,13 +410,13 @@ git push origin "homework/01-basic"
 
 在 PR 模板填写界面，需手动关联 PR 到对应 issue。
 
-你可以在 PR 正文中手动关联对应 issue，方法是添加 `#ISSUE-NUMBER` 到正文后。例如，需要链接的 issue 对应的 id 是 4，则添加一行 `#4`：
+你可以在 PR 正文中手动关联对应 issue，方法是添加 `#ISSUE-NUMBER` 到正文后。例如，需要链接的 issue 对应的 id 是 32，则添加一行 `#32`：
 
 ![associate-issue](./assets/associate-issue.png)
 
 
 
-[示例 PR](https://github.com/eesast/web-workshop/pull/12)
+[示例 PR](https://github.com/eesast/dotnet-workshop/pull/37)
 
 
 
