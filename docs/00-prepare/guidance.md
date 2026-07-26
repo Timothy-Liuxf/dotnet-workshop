@@ -351,6 +351,7 @@ dotnet test -c Release
 + `homework/02-multithreading`
 + `homework/03-async-grpc`
 + `homework/04-avalonia`
++ `homework/05-advanced`
 
 **EESAST 仓库的分支将在作业提交期间进行开放，其余时间不开放。**
 
