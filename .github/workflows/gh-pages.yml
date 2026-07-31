@@ -41,6 +41,7 @@ jobs:
           node-version: 24
 
       - name: Convert TOC syntax
+        working-directory: ./dotnet-workshop
         run: node assets/js/convert-toc.js
 
       - name: Build with Jekyll
@@ -209,7 +210,7 @@ jobs:
           test -f ./_site/demo/_framework/dotnet.js
 
       - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
 
