@@ -302,6 +302,24 @@ class LogFileAnalyzer {
   + 当分析发生错误时（例如日志的格式不正确），`State` 的值为 `Failed`，并把错误信息放在 `ErrorMessage` 中，`Entries` 为空数组。
 + `AnalyzeAll` 与 `AnalyzeFiles` 中应当跳过已经分析过且保存了分析结果的文件以节省计算资源。`AnalyzeFiles` 应当调用 `RunWorkers` 方法来分配分析任务，`RunWorkers` 中开辟的线程应当以 `WorkerMain` 作为入口方法。
 
+> [!TIP]
+>
+> 本步骤内容需要用到你在上一节 `01-basic` 中的实现，因此你需要将上一节在 `homework/01-basic` 中改动的内容同步到本节。先确认你现在所处的分支：
+> 
+> ```shell
+> git branch
+> ```
+> 
+> 为 `homework/02-multithreading` 分支，然后进行 `merge` 操作：
+> 
+> ```shell
+> git merge "homework/01-basic"
+> ```
+> 
+> 即可将 `homework/01-basic` 的内容同步到 `homework/02-multithreading` 分支。
+>
+> 后续的章节均会以此方式进行 `merge` 操作，将不再复述。
+
 > [!NOTE]
 >
 > **任务 2.2（T2.2）**
