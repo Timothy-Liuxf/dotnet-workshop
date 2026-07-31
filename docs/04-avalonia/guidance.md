@@ -256,7 +256,7 @@ public static void Main(string[] args) {
 >
 > **任务 4.1（T4.1）**
 >
-> 你需要实现以上提到的全部功能。
+> 你需要实现以上提到的全部功能。我们给出了 [一个 UI 界面的样例](https://eesast.github.io/dotnet-workshop/demo/) 供参考。
 >
 > 当你完成你的实现后，请在 `docs/04-avalonia` 目录中新建一个名为 `report.md` 的文本文件，在其中介绍你实现的功能，并给出完整功能的截图，以及你程序的鲁棒性测试截图（各种非法输入的情况）。
 >
