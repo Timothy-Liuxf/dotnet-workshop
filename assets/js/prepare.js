@@ -32,7 +32,7 @@ const getViewOnGitHubUrl = () => {
 };
 
 const getViewDemoUrl = () => {
-  return new Url('demo/', base_url).href;
+  return base_url + '/demo/';
 };
 
 const getReturnToBackPageUrl = () => {
