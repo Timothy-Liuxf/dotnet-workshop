@@ -1,7 +1,7 @@
 ## 暑培：队式作业提交
 
-<!-- Before opening this pull request, make sure your target branch and your base branch is NOT `main` or `dev` branch -->
-<!-- They should be both homework branches like `homework/01-basic`, `homework/02-multithreding`, etc. -->
+<!-- Before opening this pull request, MAKE SURE the target branch and your base branch are NOT `main` or `dev` branch -->
+<!-- They should be BOTH homework branches like `homework/01-basic` and `homework/02-multithreding`, etc. -->
 
 ### 基本信息
 
