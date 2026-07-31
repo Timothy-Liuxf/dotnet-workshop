@@ -31,6 +31,10 @@ const getViewOnGitHubUrl = () => {
   }
 };
 
+const getViewDemoUrl = () => {
+  return new Url('demo/', base_url).href;
+};
+
 const getReturnToBackPageUrl = () => {
   if (lang_index !== -1) {
     return paths.slice(0, 4).join('/') + '/';
