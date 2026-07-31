@@ -11,7 +11,7 @@
 **项目主页：**[https://eesast.github.io/dotnet-workshop/](https://eesast.github.io/dotnet-workshop/)  
 
 **参考解答：**[https://github.com/eesast/dotnet-workshop-solution](https://github.com/eesast/dotnet-workshop-solution)（非 `public`，仅讲师内部参考使用）  
-**演示效果：** 待公开
+**演示效果：**[https://eesast.github.io/dotnet-workshop/demo/](https://eesast.github.io/dotnet-workshop/demo/)
 
 ## 学习内容
 
