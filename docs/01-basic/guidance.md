@@ -320,7 +320,7 @@ public class LogFileParser {
 
 ```csharp
 var parser = new LogFileParser();
-using var reader = new StreamReader('path/to/logfile');
+using var reader = new StreamReader("path/to/logfile");
 foreach (var logEntry in parser.Parse(reader)) {
     // ...
 }
