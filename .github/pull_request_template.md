@@ -14,6 +14,6 @@
 
 <!-- Check it by replacing ' ' with 'x' in [ ] -->
 <!-- - [ ] Unchecked-->
-<!-- - [x] Unchecked -->
+<!-- - [x] Checked -->
 - [ ] 已阅读并理解本次作业要求  
 #0 <!-- Replace "0" with the number of the corresponding issue -->
