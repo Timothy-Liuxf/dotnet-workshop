@@ -67,6 +67,10 @@
 
 若你是本工程代码框架的开发者，你需要认真阅读 [开发者贡献指南](./CONTRIBUTING.md) 来进行开发。
 
+## 反馈
+
+如果你有关于软件本身，或是学习曲线设计等，存在一些疑问或问题，欢迎参考 [Issue #69](https://github.com/eesast/dotnet-workshop/issues/69) 中的指引向我们反馈！
+
 ## 后记
 
 本项目受到 [FranGuam](https://github.com/FranGuam) 编写的 [web-workshop](https://github.com/eesast/web-workshop) 启发，并在任务设计上部分参考了 [MIT 6.5840: Spring 2023](http://nil.csail.mit.edu/6.5840/2023/index.html)，在此表示感谢。
