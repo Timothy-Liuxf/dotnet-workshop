@@ -405,7 +405,7 @@ class LogFileAnalyzer {
   + `Select`：对元素进行转换
   + `OrderBy`：按指定的键排序
 
-  LINQ 方法的返回值是一个 `IEnumerable<T>` 类型（利用 **协程（coroutine）** 技术产生的可以惰性求值的类型，C\# 中可以使用 `yield return` 语句来进行惰性求值），即可以使用 `foreach` 语句进行遍历，也可以调用诸如 `ToList` 等方法将其转换成列表或其他容器。
+  LINQ 方法的返回值是一个 `IEnumerable<T>` 类型（利用 **协程（coroutine）** 技术产生的可以惰性求值的类型，C\# 中可以使用 `yield return` 语句来进行惰性求值），既可以使用 `foreach` 语句进行遍历，也可以调用诸如 `ToList` 等方法将其转换成列表或其他容器。
 
 ## 问答题
 
