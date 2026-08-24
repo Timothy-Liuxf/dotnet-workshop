@@ -492,6 +492,27 @@ a {
   border: 1px solid #30363d;
   border-radius: 6px;
   background: #010409;
+  scrollbar-width: thin;
+  scrollbar-color: #30363d #010409;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #010409;
+  border-radius: 0 6px 6px 0;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  border: 2px solid #010409;
+  border-radius: 999px;
+  background: #30363d;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #484f58;
 }
 
 .sidebar-open-button,
@@ -538,6 +559,10 @@ a {
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+.sidebar-section summary:hover {
+  color: #c8f169;
 }
 
 .sidebar-section li {
