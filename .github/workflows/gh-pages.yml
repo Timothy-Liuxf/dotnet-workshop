@@ -2,7 +2,7 @@ name: Deploy Jekyll and Avalonia WASM demo
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "gh-pages"]
     paths-ignore:
       - "src/**"
 
